@@ -1,0 +1,64 @@
+@font-face {
+  font-family: nums;
+  src: url(exo2-semibold.ttf); }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  * body {
+    height: 99vh;
+    overflow: hidden; }
+    * body #Container {
+      margin-top: 50px;
+      padding: 70px 0px;
+      text-align: center; }
+      * body #Container #Calculator {
+        background: linear-gradient(150deg, red, yellow, #1aff00);
+        -webkit-box-shadow: 13px 15px 21px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 13px 15px 21px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 13px 15px 21px -2px rgba(0, 0, 0, 0.75);
+        display: inline-block;
+        height: 450px;
+        font-family: nums;
+        width: 300px; }
+        * body #Container #Calculator #head_display {
+          height: 15%;
+          color: black;
+          position: relative; }
+        * body #Container #Calculator #num_ops {
+          height: 85%;
+          padding-top: 40px;
+          text-align: center; }
+          * body #Container #Calculator #num_ops #nums {
+            display: inline-block;
+            float: left;
+            height: 80%;
+            width: 70%; }
+            * body #Container #Calculator #num_ops #nums ul li {
+              border: 3px solid black;
+              color: black;
+              display: inline-block;
+              font-size: 40px;
+              margin-left: 20px;
+              text-align: center;
+              width: 20%;
+              list-style-type: none; }
+          * body #Container #Calculator #num_ops #ops {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            float: right;
+            vertical-align: top;
+            width: 20%; }
+            * body #Container #Calculator #num_ops #ops ul {
+              height: 100%;
+              font-size: 30px;
+              margin-left: 20px;
+              padding-top: 20px;
+              text-align: center; }
+              * body #Container #Calculator #num_ops #ops ul li:nth-child(3) {
+                font-size: 30px; }
+              * body #Container #Calculator #num_ops #ops ul li {
+                list-style-type: none; }
+
+/*# sourceMappingURL=Calculator.css.map */
