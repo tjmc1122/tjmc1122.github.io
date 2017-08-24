@@ -8,29 +8,32 @@
         <div id="Container">
             <div id="Calculator">
                 <div id="head_display">
-                    <li style="list-style-type: none; position:absolute;padding-right:10px;bottom:0px; right:0px; font-size:36px;">3+2 = 5</li>
+                    <li style="list-style-type: none; position:absolute;padding-right:10px;bottom:0px; right:0px; font-size:36px;"><span id="blinker"> | </span></li>
                    
                 </div>
-                 <hr width=90%;  style="margin-right:5px;float:right;">
+                 <hr width=90%; color="white" style="margin-top:2px;margin-right:5px;float:right;    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, red,yellow,black,green);">
                 
                 <div id="num_ops">
                     <div id="nums">
-                        <ul>
+                        <ul style="color:yellow">
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
                         </ul>
-                        <ul>
+                        <ul style="color:black">
                             <li>4</li>
                             <li>5</li>
                             <li>6</li>
                         </ul>
-                        <ul>
+                        <ul style="color:green">
                             <li  style="border-bottom:4px solid black">7</li>
                             <li  style="border-bottom:4px solid black">8</li>
                             <li  style="border-bottom:4px solid black">9</li>
                         </ul>
-                        <ul>
+                        <ul style="color:yellow">
                             <li>0</li>
                         </ul>
                     </div>
@@ -47,4 +50,5 @@
             </div>
         </div>
     </body>
+    <script src="Calculator.js"></script>
 </html>
