@@ -8,41 +8,41 @@
         <div id="Container">
             <div id="Calculator">
                 <div id="head_display">
-                    <li style="list-style-type: none; position:absolute;padding-right:10px;bottom:0px; right:0px; font-size:36px;"><span id="blinker"> | </span></li>
-                   
-                </div>
-                 <hr width=90%; color="white" style="margin-top:2px;margin-right:5px;float:right;    border: 0;
+                    <li style="list-style-type: none; padding-right:10px;bottom:0px; right:0px; font-size:36px;width:100%;"><p id="textBox" style="display:inline-block" ><span id="blinker">|</span></p></li>
+                   <hr width=90%; color="white" style="margin-top:2px;margin-right:5px;float:right;   border: 0;
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, red,yellow,black,green);">
+                </div>
+                 
                 
                 <div id="num_ops">
                     <div id="nums">
                         <ul style="color:yellow">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
+                            <li onclick = "Write('1')">1</li>
+                            <li onclick = "Write('2')">2</li>
+                            <li onclick = "Write('3')">3</li>
                         </ul>
                         <ul style="color:black">
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
+                            <li onclick = "Write('4')">4</li>
+                            <li onclick = "Write('5')">5</li>
+                            <li onclick = "Write('6')">6</li>
                         </ul>
                         <ul style="color:green">
-                            <li  style="border-bottom:4px solid black">7</li>
-                            <li  style="border-bottom:4px solid black">8</li>
-                            <li  style="border-bottom:4px solid black">9</li>
+                            <li onclick = "Write('7')">7</li>
+                            <li onclick = "Write('8')">8</li> 
+                            <li onclick = "Write('9')">9</li>
                         </ul>
                         <ul style="color:yellow">
-                            <li>0</li>
+                            <li onclick = "Write('9')">0</li>
                         </ul>
                     </div>
                     <div id="ops">
                         <ul>
-                            <li>+</li>
-                            <li>-</li>
-                            <li>/</li>
-                            <li>*</li>
+                            <li onclick = "Write('+')">+</li>
+                            <li onclick = "Write('-')">-</li>
+                            <li onclick = "Write('/')">/</li>
+                            <li onclick = "Write('*')">*</li>
                         </ul>
                     </div>
                     
