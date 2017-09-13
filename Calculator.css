@@ -14,6 +14,7 @@
     height: 99vh;
     overflow: hidden; }
     * body #Container {
+      font-family: chill;
       margin-top: 50px;
       padding: 70px 0px;
       text-align: center; }
@@ -23,43 +24,55 @@
         -moz-box-shadow: 13px 15px 21px -2px rgba(0, 0, 0, 0.75);
         box-shadow: 13px 15px 21px -2px rgba(0, 0, 0, 0.75);
         display: inline-block;
-        height: 450px;
+        min-height: 450px;
+        padding-bottom: 20px;
         width: 300px; }
-        * body #Container #Calculator #head_display:hover li {
-          opacity: 0; }
         * body #Container #Calculator #head_display {
-          height: 15%;
           color: black;
-          position: relative; }
+          min-height: 15%; }
+          * body #Container #Calculator #head_display li {
+            padding-left: 5px;
+            padding-right: 5px; }
+            * body #Container #Calculator #head_display li #blinker {
+              font-size: 20px; }
+            * body #Container #Calculator #head_display li #textBox {
+              overflow-wrap: break-word; }
         * body #Container #Calculator #num_ops {
+          border: 2px solid red;
           height: 85%;
-          padding-top: 40px;
+          padding-top: 30px;
           text-align: center;
           user-select: none; }
           * body #Container #Calculator #num_ops #nums {
+            border: 2px solid blue;
             display: inline-block;
             float: left;
-            font-family: chill;
             height: 80%;
             margin-left: 15px;
             width: 70%; }
             * body #Container #Calculator #num_ops #nums ul {
               margin-top: 5px; }
               * body #Container #Calculator #num_ops #nums ul li {
-                border: 3px solid black;
                 color: black;
                 cursor: pointer;
-                z-index: 10;
+                -webkit-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.51);
+                -moz-box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.51);
+                box-shadow: 5px 2px 9px -2px rgba(0, 0, 0, 0.51);
                 display: inline-block;
                 font-size: 40px;
+                list-style-type: none;
+                user-select: none;
                 margin-right: 20px;
                 text-align: center;
                 width: 20%;
-                list-style-type: none; }
+                z-index: 10; }
+              * body #Container #Calculator #num_ops #nums ul li:hover {
+                background-color: black;
+                border-bottom-color: white;
+                color: white; }
             * body #Container #Calculator #num_ops #nums ul:first-child {
               margin-top: 0px; }
           * body #Container #Calculator #num_ops #ops {
-            background-color: black;
             color: white;
             display: inline-block;
             float: right;
@@ -74,8 +87,17 @@
               * body #Container #Calculator #num_ops #ops ul li:nth-child(3) {
                 font-size: 25px; }
               * body #Container #Calculator #num_ops #ops ul li {
+                background-color: black;
+                border-bottom: 3px solid black;
                 list-style-type: none;
                 margin-top: 5px;
-                cursor: pointer; }
+                cursor: pointer;
+                user-select: none; }
+              * body #Container #Calculator #num_ops #ops ul li:first-child {
+                margin-top: 0px; }
+              * body #Container #Calculator #num_ops #ops ul li:hover {
+                border-bottom: 3px solid white;
+                background-color: white;
+                color: black; }
 
 /*# sourceMappingURL=Calculator.css.map */
